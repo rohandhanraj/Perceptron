@@ -1,58 +1,15 @@
 # Perceptron
 **Single Layer Perceptron(one Neuron)**  
 A Perceptron is a simple model of a biological neuron that classifies the label of the input data based on various activation functions:
-1. Binary Step Function: 
-\begin{equation}
-  f(x)=\begin{cases}
-    0, & \text{if $x<0$}.\\
-    1, & \text{otherwise}.
-  \end{cases}
-\end{equation}
-![Binary Step Function](Activation_Function_Plots\step.png)
-
-2. Signum Function:
-\begin{equation}
-  f(x)=\begin{cases}
-    -1, & \text{if $x<0$}.\\
-    0, & \text{if $x=0$>}\\
-    1, & \text{if $x>0$}.
-  \end{cases}
-\end{equation}
-![Signum Function](Activation_Function_Plots\signum.png)
-
-3. Linear Activation Function:
-$$f(x) = x$$
-![Linear Activation Function](Activation_Function_Plots\linear.png)
-
-4. Sigmoid / Logistic Activation Function:
-$$f(x) = \frac{1}{1+e^{-x}}$$
-![Sigmoid / Logistic Activation Function](Activation_Function_Plots\sigmoid.png)
-
-5. Tanh Function (Hyperbolic Tangent):
-$$f(x) = \frac{e^{x} - e^{-x}}{e^{x} + e^{-x}}$$
-![Tanh Function (Hyperbolic Tangent)](Activation_Function_Plots\tanh.png)
-
-6. ReLU Function:
-$$f(x) = max(0, x)$$
-![ReLU Function](Activation_Function_Plots\ReLU.png)
-
-7. Exponential Linear Units (ELUs) Function:
-\begin{equation}
-  f(x)=\begin{cases}
-    x, & \text{if $x\geqslant0$}.\\
-    \alpha(e^{x} - 1), & \text{otherwise}.
-  \end{cases}
-\end{equation}
-![Exponential Linear Units (ELUs) Function](Activation_Function_Plots\ELU.png)
-
-8. Swish:
-$$f(x) = \frac{x}{1 + e^{-x}}$$
-![Swish](Activation_Function_Plots\swish.png)
-
-9. Gaussian Error Linear Unit (GELU):
-$$f(x) = 0.5x(1 + tanh[\sqrt{2/\pi}(x + 0.044715x^3)])$$
-![Gaussian Error Linear Unit (GELU)](Activation_Function_Plots\GELU.png)
-
+1. Binary Step Function
+2. Signum Function
+3. Linear Activation Function
+4. Sigmoid / Logistic Activation Function
+5. Tanh Function (Hyperbolic Tangent)
+6. ReLU Function
+7. Exponential Linear Units (ELUs) Function
+8. Swish
+9. Gaussian Error Linear Unit (GELU)
 
 ```python
 fn_list = ['step', 'signum', 'linear', 'relu', 'sigmoid', 'tanh', 'elu', 'gelu', 'swish']

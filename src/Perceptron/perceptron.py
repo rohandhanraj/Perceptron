@@ -54,9 +54,11 @@ class Perceptron:
     outputs = vf(z) if fnxn != 'elu' else vf( z, alpha)
     return outputs
 
-  def fit(self, X, y):
+  def fit(self, X, y, fn, alpha):
     self.X = X
     self.y = y
+    self.funxn = fn
+    self.alpha = alpha
 
     X_bias = np.c_[self.X, -np.ones((len(self.X), 1))] # CONCATINATION
     logging.info(f"X with bias: \n{X_bias}")
